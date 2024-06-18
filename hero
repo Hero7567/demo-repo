@@ -1,0 +1,82 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+//sorting a stack
+void sortstack(stack<int> &stack){
+    //base case
+    if(stack.empty()){
+        return;
+    }
+    int num=stack.top();
+    stack.pop();
+    //recursive call
+    sortstack(stack);
+    sortedinsert(stack,num);
+    }
+
+
+
+
+
+
+
+//reverse the stack using recurrsion
+// void insertatbottom(stack<int> &s, int element){
+//     //basecase
+//     if(s.empty()){
+//         s.push(element);
+//         return;
+//     }
+//     int num=s.top();
+//     s.pop();
+//     // recursive call
+//     solve(s,element);
+//     s.push(num);
+// }
+// void reversestack(stack<int> &stack){
+//     //base case
+//     if(stack.empty()){
+//         return;
+//     }
+//     int num= stack.top();
+//     stack.pop();
+
+//     //recursive call
+//     reversestack(stack);
+//     insertatbottom(num);
+// }
+// int main(){
+
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+//add element at the end of the stack
+// void solve(stack<int>& s, int x){
+//     //base case
+//     if(s.empty()){
+//         s.push(x);
+//         return;
+//     }
+//     int num=s.top();
+//     s.pop();
+//     // recursive call
+//     solve(s,x);
+//     s.push(num);
+// }
+ 
+// int main(){
+// solve(mystack,x);
+// return mystack;
+
+//     return 0;
+// }
